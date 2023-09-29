@@ -36,7 +36,7 @@ typedef unsigned int uint;
 //Simply iterates through the list to print it
 void printList(Node* list) {
     while (list != nullptr) {
-        cout << list->data << "  ";
+        cout << list->data << ",";
         list = list->next;
     }
     cout << endl;
@@ -57,12 +57,20 @@ int addLists(Node* listA, Node* listB) {
      -Add them together
      -Return the sum
      */
-    cout << listA << endl;
-    cout << listB << endl;
+    
+//    *Node head = listA->next;
+//    while(head->next != NULL){
+//    }
+    
+    cout << "TEST" << endl;
+    printList(listA);
+    printList(listB);
+    cout << "TEST" << endl;
     
     return 0;
 }
 
+//Generates a list given a size
 Node* genList(int number) {
     //takes in number
     //Creates a new node
