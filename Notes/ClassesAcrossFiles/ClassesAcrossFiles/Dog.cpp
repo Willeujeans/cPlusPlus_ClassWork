@@ -1,9 +1,9 @@
+//#include "Animal.h"
 #include "Dog.h"
 #include <string>
 
 //Constructor function
-Dog::Dog(std::string name) {
-    myName = name;
+Dog::Dog(std::string name):Animal(name){
 }
 
 void Dog::bark(){
